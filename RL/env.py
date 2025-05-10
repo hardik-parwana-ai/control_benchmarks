@@ -24,7 +24,6 @@ def get_desired_lane_index(t):
     # Step 4: use lax to safely index into values
     return lax.dynamic_index_in_dim(lane_ids, selected_index, axis=0, keepdims=False)
 
-
 @jit
 def reward_within_boundary(state, boundary):
     return jnp.min( jnp.array([boundary[0]-state[1], state[1]-boundary[1]]) )

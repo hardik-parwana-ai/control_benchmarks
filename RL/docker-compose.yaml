@@ -8,7 +8,7 @@ services:
         dockerfile: Dockerfile
       privileged: true
       tty: true
-      network_mode: "host"
+      # network_mode: "host"
       volumes:
         - /tmp/.X11-unix:/tmp/.X11-unix
         - ./:/home/RL
