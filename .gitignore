@@ -1,2 +1,6 @@
 RL/__pycache__/
 RL/.ipynb_checkpoints
+RL/runs/
+__pycache__/
+RL/rllib/TD3-Pytorch/model/
+RL/rllib/TD3-Pytorch/runs/
