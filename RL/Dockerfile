@@ -12,3 +12,4 @@ RUN apt install -y vim
 
 RUN apt-get install -y git vim
 RUN apt-get install -y ffmpeg
+

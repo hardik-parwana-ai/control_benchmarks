@@ -5,6 +5,12 @@ RUN pip3 install torch
 RUN sudo apt-get update
 RUN sudo apt-get install -y vim gedit ffmpeg
 RUN pip3 install matplotlib
+
+RUN sudo su
+RUN sudo apt install -y swig build-essential python3-dev
+RUN pip3 install --upgrade cython
+RUN pip3 install "gymnasium[box2d]" "gymnasium[mujoco]" "gymnasium[classical_control]"
+
 #FROM nvidia/cuda:12.4.1-cudnn-devel-ubuntu22.04
 #RUN apt-get update
 #RUN apt-get install -y gedit
